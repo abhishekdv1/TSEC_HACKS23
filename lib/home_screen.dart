@@ -1,5 +1,6 @@
 import 'package:barter_app/home.dart';
 import 'package:barter_app/search_screen.dart';
+import 'package:barter_app/uploadImage.dart';
 import 'package:flutter/material.dart';
 import 'package:barter_app/drawer_pages/analytics.dart';
 import 'package:barter_app/drawer_pages/settings_page.dart';
@@ -55,16 +56,16 @@ class _HomeScreenState extends State<HomeScreen> {
           selectedStyle: const TextStyle(),
           colorLineSelected: Colors.deepPurple,
         ),
-        const SettingsPage(),
+        const MyProducts(),
       ),
       ScreenHiddenDrawer(
         ItemHiddenMenu(
-          name: 'About Us',
+          name: 'Add Product',
           baseStyle: myTextStyle,
           selectedStyle: const TextStyle(),
           colorLineSelected: Colors.deepPurple,
         ),
-        const SettingsPage(),
+        AddProduct(),
       ),
       ScreenHiddenDrawer(
         ItemHiddenMenu(
@@ -73,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
           selectedStyle: const TextStyle(),
           colorLineSelected: Colors.deepPurple,
         ),
-        const SettingsPage(),
+        const MyProducts(),
       )
     ];
   }

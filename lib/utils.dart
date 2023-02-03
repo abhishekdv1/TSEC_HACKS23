@@ -5,7 +5,7 @@ final Map<int, int> _estimatedPriceMap = {1: 10, 2: 15, 3: 20, 4: 22, 5: 25};
 final List<ProductDisplayModel> products = [
   ProductDisplayModel(
       // id: 1,
-      imageName: 'phone.jpg',
+      imagePath: 'phone.jpg',
       productTitle: 'Smartphone',
       productDescription:
           'This is my 2 year old Smartphone, it does not have any scratches. It supports NFC and it has Android 12.',
@@ -17,7 +17,7 @@ final List<ProductDisplayModel> products = [
       priceWhenBought: 40000),
   ProductDisplayModel(
       // id: 2,
-      imageName: 'phone.jpg',
+      imagePath: 'phone.jpg',
       productTitle: 'Smartphone',
       productDescription:
           'This is my 2 year old Smartphone, it does not have any scratches. It supports NFC and it has Android 12.',
@@ -29,7 +29,7 @@ final List<ProductDisplayModel> products = [
       priceWhenBought: 10000),
   ProductDisplayModel(
       // id: 10,
-      imageName: 'phone.jpg',
+      imagePath: 'phone.jpg',
       productTitle: 'Smartphone',
       productDescription:
           'This is my 2 year old Smartphone, it does not have any scratches. It supports NFC and it has Android 12.',
@@ -41,7 +41,7 @@ final List<ProductDisplayModel> products = [
       priceWhenBought: 10000),
   ProductDisplayModel(
       // id: 9,
-      imageName: 'phone.jpg',
+      imagePath: 'phone.jpg',
       productTitle: 'Smartphone',
       productDescription:
           'This is my 2 year old Smartphone, it does not have any scratches. It supports NFC and it has Android 12.',
@@ -53,7 +53,7 @@ final List<ProductDisplayModel> products = [
       priceWhenBought: 20000),
   ProductDisplayModel(
       // id: 3,
-      imageName: 'phone.jpg',
+      imagePath: 'phone.jpg',
       productTitle: 'Refrigerator',
       productDescription:
           'This is my 2 year old Refrigerator, it does not have any scratches. It supports NFC and it has Android 12.',
@@ -65,7 +65,7 @@ final List<ProductDisplayModel> products = [
       priceWhenBought: 30000),
   ProductDisplayModel(
       // id: 4,
-      imageName: 'phone.jpg',
+      imagePath: 'phone.jpg',
       productTitle: 'Refrigerator',
       productDescription:
           'This is my 2 year old Refrigerator, it does not have any scratches. It supports NFC and it has Android 12.',
@@ -77,7 +77,7 @@ final List<ProductDisplayModel> products = [
       priceWhenBought: 10000),
   ProductDisplayModel(
       // id: 5,
-      imageName: 'phone.jpg',
+      imagePath: 'phone.jpg',
       productTitle: 'Laptop',
       productDescription:
           'This is my 2 year old laptop, it does not have any scratches. It supports NFC and it has Android 12.',
@@ -89,7 +89,7 @@ final List<ProductDisplayModel> products = [
       priceWhenBought: 70000),
   ProductDisplayModel(
       // id: 6,
-      imageName: 'phone.jpg',
+      imagePath: 'phone.jpg',
       productTitle: 'Laptop',
       productDescription:
           'This is my 2 year old Smartphone, it does not have any scratches. It supports NFC and it has Android 12.',
@@ -101,7 +101,7 @@ final List<ProductDisplayModel> products = [
       priceWhenBought: 50000),
   ProductDisplayModel(
       // id: 7,
-      imageName: 'phone.jpg',
+      imagePath: 'phone.jpg',
       productTitle: 'Television',
       productDescription:
           'This is my 2 year old Television, it does not have any scratches. It supports NFC and it has Android 12.',
@@ -113,7 +113,7 @@ final List<ProductDisplayModel> products = [
       priceWhenBought: 20000),
   ProductDisplayModel(
       // id: 8,
-      imageName: 'phone.jpg',
+      imagePath: 'phone.jpg',
       productTitle: 'Television',
       productDescription:
           'This is my 2 year old Television, it does not have any scratches. It supports NFC and it has Android 12.',

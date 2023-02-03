@@ -1,3 +1,4 @@
+import 'package:barter_app/home_screen.dart';
 import 'package:barter_app/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +21,7 @@ class MainApp extends StatelessWidget {
           scaffoldBackgroundColor: Colors.deepPurple[100],
           primaryColor: Colors.purple),
       home: const LoginScreen(),
+      // home: const HomeScreen(),
     );
   }
 }
