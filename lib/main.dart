@@ -1,5 +1,6 @@
 import 'package:barter_app/home_screen.dart';
 import 'package:barter_app/login_screen.dart';
+import 'package:barter_app/onboarding_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -18,9 +19,9 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light().copyWith(
           useMaterial3: true,
-          scaffoldBackgroundColor: Colors.deepPurple[100],
-          primaryColor: Colors.purple),
-      home: const LoginScreen(),
+          scaffoldBackgroundColor: Color(0xffECF9FF),
+          primaryColor: Color(0xffECF9FF)),
+      home: const OnBoardingScreen(),
       // home: const HomeScreen(),
     );
   }

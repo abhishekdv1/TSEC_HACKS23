@@ -34,7 +34,7 @@ void passUr(String ur) async {
 class FirestoreImageState extends State<FirestoreImage> {
   FirestoreImageState(Reference reference, this.fallback, this.placeholder) {
     String ur = reference.getDownloadURL().toString();
-    passUr(ur);
+    // passUr(ur);
     reference
         .getDownloadURL()
         .then(_setImageData)

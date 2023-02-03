@@ -190,7 +190,7 @@ class _MyHomeState extends State<MyHome> {
                 onPressed: () async {
                   SharedPreferences pref =
                       await SharedPreferences.getInstance();
-                  String? getImageUrlPath = pref.getString('imagePaffth');
+                  String? getImageUrlPath = pref.getString('imagePath');
                   ProductDisplayModel currentVar = ProductDisplayModel(
                       priceWhenBought:
                           int.parse(priceWhenBoughtController.text),
@@ -198,7 +198,7 @@ class _MyHomeState extends State<MyHome> {
                           int.parse(yearsElapsedWhenBoughtController.text),
                       views: 0,
                       tag: productTypeController.text,
-                      imagePath: "ss ds $getImageUrlPath",
+                      imagePath: getImageUrlPath,
                       productTitle: productNameController.text,
                       productDescription: productDescriptionController.text,
                       exchangeProductDescription:

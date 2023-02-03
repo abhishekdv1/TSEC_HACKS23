@@ -84,6 +84,12 @@ class FirebasePictureUploadController {
     final UploadTask uploadTask = imgRef.putFile(
         File(image.path), new SettableMetadata(contentType: 'image/jpg'));
 
+    var imageUrl = await (await uploadTask).ref.getDownloadURL();
+    String url = imageUrl.toString();
+    print("UMA $url");
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    await pref.setString('imagePath', url);
+
     // wait until upload is complete
     try {
       await uploadTask;

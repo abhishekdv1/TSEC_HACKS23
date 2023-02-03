@@ -55,7 +55,7 @@ class _SearchScreenState extends State<SearchScreen> {
               myProductData.forEach((key, value) {
                 final currentProductData = Map<String, dynamic>.from(value);
                 _myDataList.add(ProductDisplayModel(
-                    imagePath: 'assets/images/phone.jpg',
+                    imagePath: currentProductData['imagePath'],
                     productTitle: currentProductData['productTitle'],
                     productDescription:
                         currentProductData['productDescription'],
@@ -168,7 +168,7 @@ class _SearchScreenState extends State<SearchScreen> {
                                                                     .circular(
                                                                         12),
                                                             image: DecorationImage(
-                                                                image: AssetImage(
+                                                                image: NetworkImage(
                                                                     '${tagList[index].imagePath}'),
                                                                 fit: BoxFit
                                                                     .fill)),
@@ -445,7 +445,7 @@ class _SearchScreenState extends State<SearchScreen> {
                                                               BorderRadius
                                                                   .circular(12),
                                                           image: DecorationImage(
-                                                              image: AssetImage(
+                                                              image: NetworkImage(
                                                                   '${tagList[index].imagePath}'),
                                                               fit:
                                                                   BoxFit.fill)),
@@ -480,8 +480,8 @@ class _SearchScreenState extends State<SearchScreen> {
                                               borderRadius:
                                                   BorderRadius.circular(12),
                                               image: DecorationImage(
-                                                  image: AssetImage(
-                                                      'assets/images/phone.jpg'),
+                                                  image: NetworkImage(
+                                                      '${tagList[index].imagePath}'),
                                                   fit: BoxFit.fill)),
                                         ),
                                       ],

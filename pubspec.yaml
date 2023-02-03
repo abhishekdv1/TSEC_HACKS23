@@ -23,6 +23,7 @@ dependencies:
   syncfusion_flutter_charts: ^19.1.56
   hidden_drawer_menu: ^3.0.1
   firebase_database: ^10.0.9
+  smooth_page_indicator: ^1.0.0+2
 
 dev_dependencies:
   flutter_test:

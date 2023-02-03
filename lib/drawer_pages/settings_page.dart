@@ -38,7 +38,7 @@ class _MyProductsState extends State<MyProducts> {
               myProductData.forEach((key, value) {
                 final currentProductData = Map<String, dynamic>.from(value);
                 _myDataList.add(ProductDisplayModel(
-                    imagePath: 'assets/images/phone.jpg',
+                    imagePath: currentProductData['imagePath'],
                     productTitle: currentProductData['productTitle'],
                     productDescription:
                         currentProductData['productDescription'],
@@ -72,7 +72,7 @@ class _MyProductsState extends State<MyProducts> {
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(12),
                                       image: DecorationImage(
-                                          image: AssetImage(
+                                          image: NetworkImage(
                                               '${_myDataList[index].imagePath}'),
                                           fit: BoxFit.fill)),
                                 ),
@@ -264,7 +264,7 @@ class _MyProductsState extends State<MyProducts> {
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(12),
                                     image: DecorationImage(
-                                        image: AssetImage(
+                                        image: NetworkImage(
                                             '${_myDataList[index].imagePath}'),
                                         fit: BoxFit.fill)),
                               ),
